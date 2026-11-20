@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parva Shah — Data Scientist & AI Engineer</title>
+  <meta name="description" content="Parva Shah – MS Engineering Data Science & AI at University of Houston. NIST-certified AI systems, multi-agent platforms, and production-grade ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">PS<span>.</span></a>
+    <div class="nav-center">
+      <a href="#about">About</a>
+      <a href="#experience">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-track">
+          <span class="toggle-thumb">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </span>
+        </span>
+      </button>
+      <a href="Parva_Shah_Resume.pdf" class="nav-cta" download>Resume ↓</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── MOBILE MENU ─── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#experience">Work</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="Parva_Shah_Resume.pdf" class="nav-cta" download>Resume ↓</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <!-- BENTO GRID HERO -->
+    <div class="bento-grid">
+
+      <!-- B1: Name + title card (large) -->
+      <div class="bento-card b-name">
+        <div class="b-tag">Available for Opportunities</div>
+        <h1 class="hero-name">Parva<br/>Shah</h1>
+        <div class="hero-role-strip">
+          <span>Data Scientist</span>
+          <span class="sep">·</span>
+          <span>AI Engineer</span>
+          <span class="sep">·</span>
+          <span>CV Specialist</span>
+        </div>
+        <p class="hero-school">M.S. Engineering Data Science · University of Houston</p>
+      </div>
+
+      <!-- B2: Avatar card -->
+      <div class="bento-card b-avatar">
+        <img src="avatar.png" alt="Parva Shah" id="hero-avatar" />
+        <div class="avatar-overlay">
+          <span class="av-loc">📍 Houston, TX</span>
+        </div>
+      </div>
+
+      <!-- B3: CTA card -->
+      <div class="bento-card b-cta">
+        <p>Building AI that<br/><em>works in the real world</em></p>
+        <div class="b-cta-btns">
+          <a href="#projects" class="btn-fill" id="b-hero-projects">View Work</a>
+          <a href="#contact" class="btn-outline" id="b-hero-contact">Say Hello</a>
+        </div>
+      </div>
+
+      <!-- B4: NIST stat -->
+      <div class="bento-card b-stat b-stat-1">
+        <div class="stat-big">125<span>/190</span></div>
+        <div class="stat-caption">NIST FRVT<br/>Global Ranking</div>
+        <div class="stat-icon">🏆</div>
+      </div>
+
+      <!-- B5: Speed stat -->
+      <div class="bento-card b-stat b-stat-2">
+        <div class="stat-big">20<span>s</span></div>
+        <div class="stat-caption">End-to-end<br/>AI pipeline</div>
+        <div class="stat-icon">⚡</div>
+      </div>
+
+      <!-- B6: Latency stat -->
+      <div class="bento-card b-stat b-stat-3">
+        <div class="stat-big">25<span>%</span></div>
+        <div class="stat-caption">Latency<br/>Reduction</div>
+        <div class="stat-icon">📉</div>
+      </div>
+
+      <!-- B7: Quick tech card -->
+      <div class="bento-card b-tech">
+        <div class="b-tech-label">Core Stack</div>
+        <div class="b-tech-pills">
+          <span>PyTorch</span><span>TensorFlow</span><span>React</span>
+          <span>Gemini API</span><span>OpenCV</span><span>Docker</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE SKILLS STRIP ─── -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Python</span><span class="dot">✦</span>
+      <span>PyTorch</span><span class="dot">✦</span>
+      <span>TensorFlow</span><span class="dot">✦</span>
+      <span>Scikit-learn</span><span class="dot">✦</span>
+      <span>OpenCV</span><span class="dot">✦</span>
+      <span>React</span><span class="dot">✦</span>
+      <span>Gemini API</span><span class="dot">✦</span>
+      <span>AWS</span><span class="dot">✦</span>
+      <span>Docker</span><span class="dot">✦</span>
+      <span>SQL</span><span class="dot">✦</span>
+      <span>NLP</span><span class="dot">✦</span>
+      <span>LLMs</span><span class="dot">✦</span>
+      <span>Computer Vision</span><span class="dot">✦</span>
+      <span>Power BI</span><span class="dot">✦</span>
+      <span>Flask</span><span class="dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Python</span><span class="dot">✦</span>
+      <span>PyTorch</span><span class="dot">✦</span>
+      <span>TensorFlow</span><span class="dot">✦</span>
+      <span>Scikit-learn</span><span class="dot">✦</span>
+      <span>OpenCV</span><span class="dot">✦</span>
+      <span>React</span><span class="dot">✦</span>
+      <span>Gemini API</span><span class="dot">✦</span>
+      <span>AWS</span><span class="dot">✦</span>
+      <span>Docker</span><span class="dot">✦</span>
+      <span>SQL</span><span class="dot">✦</span>
+      <span>NLP</span><span class="dot">✦</span>
+      <span>LLMs</span><span class="dot">✦</span>
+      <span>Computer Vision</span><span class="dot">✦</span>
+      <span>Power BI</span><span class="dot">✦</span>
+      <span>Flask</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-num">01</div>
+      <div class="about-layout">
+        <div class="about-left">
+          <h2 class="section-heading">Who I Am</h2>
+          <p class="about-lead">
+            I'm a grad student who builds AI that ships — not just experiments that live in Jupyter notebooks.
+          </p>
+          <p class="about-body">
+            From developing a <strong>NIST-certified face recognition system</strong> ranked 125th globally, to building autonomous multi-agent AI pipelines that produce publish-ready content in 20 seconds flat — I live at the intersection of research and engineering.
+          </p>
+          <p class="about-body">
+            Currently pursuing my <strong>MS in Engineering Data Science</strong> at the <strong>University of Houston</strong>, deepening my expertise in ML theory while continuing to ship production-grade systems. My north star: scalable, end-to-end solutions that drive real-world impact.
+          </p>
+          <div class="about-contact-row">
+            <a href="mailto:sparva078@gmail.com" class="contact-chip">✉ sparva078@gmail.com</a>
+            <a href="tel:+17132526259" class="contact-chip">📞 (713) 252-6259</a>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-img-card">
+            <img src="avatar.png" alt="Parva Shah" />
+            <div class="about-img-label">
+              <span>Parva Shah</span>
+              <span class="sub">MS EDS · UH · 2027</span>
+            </div>
+          </div>
+          <div class="about-facts-grid">
+            <div class="af-card af-coral">
+              <div class="af-icon">🎓</div>
+              <div class="af-val">M.S. EDS</div>
+              <div class="af-key">University of Houston</div>
+            </div>
+            <div class="af-card af-yellow">
+              <div class="af-icon">🏛️</div>
+              <div class="af-val">B.E. CS</div>
+              <div class="af-key">AI-ML Specialization · GTU</div>
+            </div>
+            <div class="af-card af-teal">
+              <div class="af-icon">📍</div>
+              <div class="af-val">Houston, TX</div>
+              <div class="af-key">Originally from Gujarat, India</div>
+            </div>
+            <div class="af-card af-purple">
+              <div class="af-icon">🔬</div>
+              <div class="af-val">Research + Eng</div>
+              <div class="af-key">AI Systems Builder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─── -->
+  <section id="education" class="section edu-section">
+    <div class="container">
+      <div class="section-num">02</div>
+      <h2 class="section-heading">Education</h2>
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-year-badge current-badge">2025–2027</div>
+          <div class="edu-body">
+            <div class="edu-inst">University of Houston</div>
+            <div class="edu-deg">Master of Science in Engineering Data Science</div>
+            <div class="edu-loc">Houston, TX · Currently Enrolled</div>
+            <div class="edu-courses">
+              <span>Machine Learning</span>
+              <span>Probability & Statistics</span>
+              <span>Data Science</span>
+              <span>AI Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-divider"></div>
+        <div class="edu-item reveal">
+          <div class="edu-year-badge">2021–2025</div>
+          <div class="edu-body">
+            <div class="edu-inst">Adani Institute — GTU</div>
+            <div class="edu-deg">B.E. Computer Science <em>(AI-ML Specialization)</em></div>
+            <div class="edu-loc">Gujarat, India · Graduated May 2025</div>
+            <div class="edu-courses">
+              <span>Deep Learning</span>
+              <span>Artificial Intelligence</span>
+              <span>Predictive Analytics</span>
+              <span>Linear Algebra</span>
+              <span>DBMS</span>
+              <span>DSA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section id="experience" class="section exp-section">
+    <div class="container">
+      <div class="section-num">03</div>
+      <h2 class="section-heading">Experience</h2>
+      <div class="exp-cards">
+
+        <div class="exp-card reveal">
+          <div class="exp-card-header">
+            <div class="exp-meta">
+              <div class="exp-role">AI / ML Intern</div>
+              <div class="exp-company">Adiance Technologies Pvt. Ltd.</div>
+              <div class="exp-dates">Jan 2025 – Jun 2025 · Ahmedabad, India</div>
+            </div>
+            <div class="exp-pill cv-pill">Computer Vision</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed Linux-based face recognition system for AI-powered CCTV, achieving <strong>NIST FRVT certification</strong> and global ranking <strong>125/190 worldwide</strong></li>
+            <li>Integrated <strong>RetinaFace + AdaFace</strong>, improving accuracy by 15% and hitting <strong>20+ FPS</strong> on live streams</li>
+            <li>Collaborated cross-functionally to cut system latency by <strong>25%</strong>, enabling production deployment at scale</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>OpenCV</span><span>RetinaFace</span><span>AdaFace</span><span>Linux</span><span>Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-card-header">
+            <div class="exp-meta">
+              <div class="exp-role">Data Science Intern</div>
+              <div class="exp-company">Unified Mentor Private Limited</div>
+              <div class="exp-dates">Jun 2024 – Jul 2024 · Gurugram, India</div>
+            </div>
+            <div class="exp-pill ds-pill">Data Analytics</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Performed EDA on <strong>FIFA World Cup datasets (1930–2022)</strong>, identifying performance trends using Python & Pandas</li>
+            <li>Built interactive <strong>Power BI dashboard</strong> visualizing win rates, goal differentials, and player KPIs</li>
+            <li>Automated preprocessing workflows, boosting data preparation efficiency by <strong>35%</strong></li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>Pandas</span><span>Power BI</span><span>EDA</span><span>Data Visualization</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="section proj-section">
+    <div class="container">
+      <div class="section-num">04</div>
+      <h2 class="section-heading">Selected Projects</h2>
+
+      <div class="proj-grid">
+
+        <!-- Featured -->
+        <div class="proj-card proj-featured reveal">
+          <div class="proj-index">01</div>
+          <div class="proj-content">
+            <div class="proj-badges">
+              <span class="proj-badge-featured">Featured</span>
+              <span class="proj-badge">Multi-Agent AI</span>
+            </div>
+            <h3>Nexus Multi-Agent Platform</h3>
+            <p>Autonomous system of Researcher, Analyst, and Writer AI agents orchestrated to generate publish-ready blog articles in under <strong>20 seconds</strong> end-to-end. Integrated Google Search grounding for real-time, citation-backed data retrieval.</p>
+            <div class="proj-metrics-row">
+              <div class="proj-metric"><span>⚡</span> 20s pipeline</div>
+              <div class="proj-metric"><span>📈</span> 30%+ accuracy</div>
+              <div class="proj-metric"><span>✅</span> 98% UI score</div>
+            </div>
+            <div class="proj-footer">
+              <div class="proj-tech"><span>React 19</span><span>TypeScript</span><span>Gemini API</span><span>Google Search</span></div>
+              <a href="https://github.com/pshah2983" target="_blank" rel="noopener" class="proj-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18A11.05 11.05 0 0112 6.84c.98 0 1.97.13 2.89.39 2.2-1.49 3.16-1.18 3.16-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.13v3.16c0 .31.2.66.79.55C20.22 21.43 23.5 17.1 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+                GitHub →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regular cards -->
+        <div class="proj-card reveal">
+          <div class="proj-index">02</div>
+          <div class="proj-emoji">📊</div>
+          <h3>Data Visualization System</h3>
+          <p>Full-stack Flask app for dataset preprocessing, visualization, and management. Chart recommendation engine accepting CSV/XLSX/TXT up to 16 MB with 10+ chart types.</p>
+          <div class="proj-footer">
+            <div class="proj-tech"><span>Flask</span><span>SQLite</span><span>Plotly</span><span>Pandas</span></div>
+            <a href="https://github.com/pshah2983" target="_blank" rel="noopener" class="proj-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18A11.05 11.05 0 0112 6.84c.98 0 1.97.13 2.89.39 2.2-1.49 3.16-1.18 3.16-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.13v3.16c0 .31.2.66.79.55C20.22 21.43 23.5 17.1 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+              →
+            </a>
+          </div>
+          <div class="proj-impact">40% less manual reporting time</div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-index">03</div>
+          <div class="proj-emoji">🍴</div>
+          <h3>Recipe Chatbot</h3>
+          <p>NLP chatbot for recipe discovery using natural language queries. Built with Sentence Transformers + spaCy for semantic search across 100+ global cuisines.</p>
+          <div class="proj-footer">
+            <div class="proj-tech"><span>Python</span><span>spaCy</span><span>Flask</span><span>NLP</span></div>
+            <a href="https://github.com/pshah2983" target="_blank" rel="noopener" class="proj-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18A11.05 11.05 0 0112 6.84c.98 0 1.97.13 2.89.39 2.2-1.49 3.16-1.18 3.16-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.13v3.16c0 .31.2.66.79.55C20.22 21.43 23.5 17.1 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+              →
+            </a>
+          </div>
+          <div class="proj-impact">20% better query accuracy</div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-index">04</div>
+          <div class="proj-emoji">👁️</div>
+          <h3>NIST Face Recognition System</h3>
+          <p>Production Linux-based CCTV face recognition achieving NIST FRVT certification. Ranked 125/190 worldwide, processing live 20+ FPS streams with RetinaFace + AdaFace.</p>
+          <div class="proj-footer">
+            <div class="proj-tech"><span>Python</span><span>RetinaFace</span><span>OpenCV</span><span>Linux</span></div>
+            <a href="https://github.com/pshah2983" target="_blank" rel="noopener" class="proj-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18A11.05 11.05 0 0112 6.84c.98 0 1.97.13 2.89.39 2.2-1.49 3.16-1.18 3.16-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.13v3.16c0 .31.2.66.79.55C20.22 21.43 23.5 17.1 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+              →
+            </a>
+          </div>
+          <div class="proj-impact">NIST FRVT Certified — #125 globally</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-num">05</div>
+      <h2 class="section-heading">Skills</h2>
+      <div class="skills-bento">
+
+        <div class="sk-card sk-wide reveal">
+          <div class="sk-label">Languages</div>
+          <div class="sk-pills">
+            <span>Python</span><span>JavaScript</span><span>TypeScript</span>
+            <span>R</span><span>C</span><span>SQL</span><span>MATLAB</span><span>HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="sk-card reveal">
+          <div class="sk-label">ML / AI</div>
+          <div class="sk-pills coral">
+            <span>Deep Learning</span><span>Computer Vision</span><span>NLP</span>
+            <span>Generative AI</span><span>LLMs</span><span>YOLO</span><span>RetinaFace</span>
+          </div>
+        </div>
+
+        <div class="sk-card reveal">
+          <div class="sk-label">Frameworks</div>
+          <div class="sk-pills purple">
+            <span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span>
+            <span>React</span><span>Flask</span><span>Streamlit</span><span>OpenCV</span>
+          </div>
+        </div>
+
+        <div class="sk-card sk-wide reveal">
+          <div class="sk-label">Cloud & DevOps</div>
+          <div class="sk-pills teal">
+            <span>AWS (EC2, Kendra)</span><span>GCP</span><span>Docker</span>
+            <span>Git</span><span>REST APIs</span><span>Linux</span><span>MLOps</span>
+          </div>
+        </div>
+
+        <div class="sk-card reveal">
+          <div class="sk-label">Data & Viz</div>
+          <div class="sk-pills yellow">
+            <span>Plotly</span><span>Power BI</span><span>Pandas</span>
+            <span>NumPy</span><span>EDA</span><span>Feature Engineering</span>
+          </div>
+        </div>
+
+        <div class="sk-card reveal">
+          <div class="sk-label">Databases</div>
+          <div class="sk-pills">
+            <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section id="certifications" class="section certs-section">
+    <div class="container">
+      <div class="section-num">06</div>
+      <h2 class="section-heading">Certifications</h2>
+      <div class="certs-row">
+        <div class="cert-item reveal">
+          <div class="cert-logo cert-aws">AWS</div>
+          <div>
+            <div class="cert-name">Introduction to Generative AI</div>
+            <div class="cert-org">Amazon Web Services</div>
+          </div>
+        </div>
+        <div class="cert-item reveal">
+          <div class="cert-logo cert-oracle">OCI</div>
+          <div>
+            <div class="cert-name">Cloud Infrastructure AI Foundations Associate</div>
+            <div class="cert-org">Oracle</div>
+          </div>
+        </div>
+        <div class="cert-item reveal">
+          <div class="cert-logo cert-oracle">OCI</div>
+          <div>
+            <div class="cert-name">Data Platforms Foundations Associate</div>
+            <div class="cert-org">Oracle</div>
+          </div>
+        </div>
+        <div class="cert-item reveal">
+          <div class="cert-logo cert-google">GCP</div>
+          <div>
+            <div class="cert-name">Data Foundations Certificate</div>
+            <div class="cert-org">Google</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-num">07</div>
+      <div class="contact-split">
+        <div class="contact-left">
+          <h2 class="section-heading contact-h">Let's build something<br/><em>great together.</em></h2>
+          <p class="contact-sub">I'm actively looking for internships, research roles, and full-time positions in Data Science, ML & AI Engineering.</p>
+          <a href="mailto:sparva078@gmail.com" class="btn-fill big-btn" id="contact-email-btn">sparva078@gmail.com →</a>
+        </div>
+        <div class="contact-right">
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/parva-shah-71210a21a" target="_blank" rel="noopener" class="cl-row" id="contact-linkedin">
+              <div class="cl-platform">LinkedIn</div>
+              <div class="cl-handle">parva-shah-71210a21a →</div>
+            </a>
+            <a href="https://github.com/pshah2983" target="_blank" rel="noopener" class="cl-row" id="contact-github">
+              <div class="cl-platform">GitHub</div>
+              <div class="cl-handle">pshah2983 →</div>
+            </a>
+            <a href="tel:+17132526259" class="cl-row" id="contact-phone">
+              <div class="cl-platform">Phone</div>
+              <div class="cl-handle">+1 (713) 252-6259 →</div>
+            </a>
+            <a href="Parva_Shah_Resume.pdf" download class="cl-row" id="contact-resume">
+              <div class="cl-platform">Resume</div>
+              <div class="cl-handle">Download PDF →</div>
+            </a>
+          </div>
+          <div class="open-badge">
+            <span class="open-dot"></span>
+            Open to Opportunities · Houston, TX
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <span class="footer-logo">PS<em>.</em></span>
+        <span class="footer-copy">© 2025 Parva Shah · Built with craft &amp; caffeine</span>
+        <div class="footer-socials">
+          <a href="https://github.com/pshah2983" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/parva-shah-71210a21a" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
