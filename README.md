@@ -3,7 +3,7 @@
 Personal portfolio website built with pure HTML, CSS, and JavaScript.
 
 ## 🌐 Live Site
-> Deployed at: `https://pshah2983.github.io/portfolio/`
+> Deployed at: `https://parvashah29.github.io/Portfolio/`
 
 ## 📁 Project Structure
 ```
@@ -32,13 +32,13 @@ git init
 git add .
 git commit -m "Initial portfolio commit"
 git branch -M main
-git remote add origin https://github.com/pshah2983/portfolio.git
+git remote add origin https://github.com/parvashah29/Portfolio.git
 git push -u origin main
 ```
 
 Then: **GitHub repo → Settings → Pages → Source: `main` branch / `/(root)`**
 
-Live at: `https://pshah2983.github.io/portfolio/`
+Live at: `https://parvashah29.github.io/Portfolio/`
 
 ## 🛠 Tech Stack
 - HTML5 · CSS3 · Vanilla JavaScript
